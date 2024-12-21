@@ -1,6 +1,6 @@
 import React, { useState } from "react";
- 
-const AccordionItem = (props) => {
+
+const AccordianItemNew = (props) => {
   const [status, setStatus] = useState(props.status);
   const handleClick = () => {
     setStatus(!status);
@@ -15,6 +15,13 @@ const AccordionItem = (props) => {
           <div className="accrodion-content">
             <div className="inner">
               <p>{props.content}</p>
+              {props.bulletPoints && (
+                <ul className="bullet-points">
+                  {props.bulletPoints.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ) : null}
@@ -22,6 +29,5 @@ const AccordionItem = (props) => {
     </div>
   );
 };
- 
-export default AccordionItem;
- 
+
+export default AccordianItemNew;

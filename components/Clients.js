@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Swiper from "react-id-swiper";
 import BrandImage from "../assets/images/resources/brand-1-1.png";
+import VS from "../assets/images/resources/VS.png";
 
 const Clients = (props) => {
   const params = {
@@ -37,16 +38,16 @@ const Clients = (props) => {
       <Container>
         <Swiper className="brand-one__carousel" {...params}>
           <div className="item">
-            <img src={BrandImage} alt="" />
+            <img src={VS} alt="" />
           </div>
           <div className="item">
-            <img src={BrandImage} alt="" />
+            <img src={VS} alt="" />
           </div>
           <div className="item">
-            <img src={BrandImage} alt="" />
+            <img src={VS} alt="" />
           </div>
           <div className="item">
-            <img src={BrandImage} alt="" />
+            <img src={VS} alt="" />
           </div>
           <div className="item">
             <img src={BrandImage} alt="" />

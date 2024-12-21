@@ -11,9 +11,7 @@ const NavLinks = () => {
   return (
     <ul className="main-nav__navigation-box">
       <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
+        <Link href="/">Home</Link>
       </li>
       <li>
         <ScrollLink
@@ -22,67 +20,65 @@ const NavLinks = () => {
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
-        >
+          duration={500}>
           Features
         </ScrollLink>
       </li>
       <li>
+        <Link href="/mystore">My Store</Link>
+      </li>
+      <li>
+        <Link href="/about">About</Link>
+      </li>
+      {/* <li>
         <ScrollLink
           activeClass="current"
           to="pricing"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
-        >
+          duration={500}>
           Pricing
         </ScrollLink>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <ScrollLink
           activeClass="current"
           to="team"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
-        >
+          duration={500}>
           Team
         </ScrollLink>
-      </li>
-      <li>
+      </li> */}
+      {/* <li>
         <ScrollLink
           activeClass="current"
           to="screens"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
-        >
+          duration={500}>
           Screens
         </ScrollLink>
-      </li>
-      <li className="dropdown">
+      </li> */}
+      {/* <li className="dropdown">
         <Link href="/blog">
           <>
-            <a>News</a>
+            News
             <i className="fa fa-angle-down" onClick={handleDropdownStatus}></i>
           </>
         </Link>
         <ul className={dropdownStatus === true ? "active" : null}>
           <li>
-            <Link href="/blog">
-              <a>News</a>
-            </Link>
+            <Link href="/blog">News</Link>
           </li>
           <li>
-            <Link href="/blog-post">
-              <a>News Details</a>
-            </Link>
+            <Link href="/blog-post">News Details</Link>
           </li>
         </ul>
-      </li>
+      </li> */}
     </ul>
   );
 };

@@ -10,7 +10,7 @@ const Pricing = (props) => {
         <BlockTitle
           textAlign="center"
           paraText="Pricing Tables"
-          titleText={`Choose Pricing Plans Which \n Suits Your Needs`}
+          titleText={`Choose Program needed to \n Transform your career`}
         />
         <ul
           className="list-inline text-center switch-toggler-list"
@@ -59,9 +59,9 @@ const Pricing = (props) => {
                   <div className="pricing-one__circle"></div>
                   <div className="pricing-one__inner">
                     <p>Basic Pack</p>
-                    <h3>$59.00</h3>
+                    <h3>₹2,499</h3>
                     <ul className="list-unstyled pricing-one__list">
-                      <li>Extra features</li>
+                      <li>Internship Certificate</li>
                       <li>Lifetime free support</li>
                       <li>Upgrate options</li>
                       <li>Full access</li>
@@ -79,9 +79,9 @@ const Pricing = (props) => {
                   <div className="pricing-one__circle"></div>
                   <div className="pricing-one__inner">
                     <p>Standard Pack</p>
-                    <h3>$79.00</h3>
+                    <h3>₹24,999</h3>
                     <ul className="list-unstyled pricing-one__list">
-                      <li>Extra features</li>
+                      <li>Internship Certificate</li>
                       <li>Lifetime free support</li>
                       <li>Upgrate options</li>
                       <li>Full access</li>
@@ -99,9 +99,9 @@ const Pricing = (props) => {
                   <div className="pricing-one__circle"></div>
                   <div className="pricing-one__inner">
                     <p>Ultimate Pack</p>
-                    <h3>$99.00</h3>
+                    <h3>₹2,499</h3>
                     <ul className="list-unstyled pricing-one__list">
-                      <li>Extra features</li>
+                      <li>Internship Certificate</li>
                       <li>Lifetime free support</li>
                       <li>Upgrate options</li>
                       <li>Full access</li>

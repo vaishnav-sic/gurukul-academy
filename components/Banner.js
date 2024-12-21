@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ModalVideo from "react-modal-video";
 
 import BannerShape from "../assets/images/shapes/banner-shape-1-1.png";
@@ -9,29 +9,42 @@ const Banner = () => {
   const [open, setOpen] = useState({
     isOpen: false,
   });
+  const [textIndex, setTextIndex] = useState(0);
+  const [subTextOptions, setSubTextOptions] = useState([
+    "Training",
+    "Placement",
+  ]);
+
   const openModal = () => {
     setOpen({
       isOpen: true,
     });
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % subTextOptions.length);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, [subTextOptions.length]);
+
   return (
     <section className="banner-one" id="home">
       <img src={BannerShape} className="banner-one__bg-shape-1" alt="" />
       <div
         className="banner-one__bg"
-        style={{ backgroundImage: `url(${BannerBG})` }}
-      ></div>
+        style={{ backgroundImage: `url(${BannerBG})` }}></div>
       <div className="container">
-        <ModalVideo
+        {/* <ModalVideo
           channel="youtube"
           isOpen={open.isOpen}
-          videoId="Kl5B6MBAntI"
+          videoId="AxggwtFhVIM"
           onClose={() => setOpen({ isOpen: false })}
         />
         <div onClick={openModal} className="banner-one__video video-popup">
           <i className="fa fa-play"></i>
-        </div>
+        </div> */}
         <div className="banner-one__moc">
           <img
             src={BannerMoc}
@@ -45,22 +58,21 @@ const Banner = () => {
             <div className="banner-one__content">
               <form
                 className="banner-one__mc-form mc-form"
-                data-url="MAILCHIMP__POPUP__FORM__URL"
-              >
-                <input type="text" name="email" placeholder="Email address" />
-                <button type="submit" className="thm-btn banner-one__mc-btn">
-                  <span>Free Trial</span>
-                </button>
+                data-url="MAILCHIMP__POPUP__FORM__URL">
+                <div className="center-text">
+                  <h5>Seeking In-Depth Information?</h5>
+                </div>
+                <a href="#enquire" className="thm-btn banner-one__btn">
+                  <span>Dive In!</span>
+                </a>
               </form>
               <div className="mc-form__response"></div>
               <h3>
-                Manage Your <br /> Project with <br /> Application
+                Best Industry <br />
+                <div className="blue-text">{subTextOptions[textIndex]}</div>
               </h3>
-              <p>
-                Nulla facilisi. Proin felis neque, suscipit egestas erat a{" "}
-                <br /> tincidunt finibus magna consectetur lacus.
-              </p>
-              <a href="#" className="thm-btn banner-one__btn">
+              <p>Guaranteed 100% Success</p>
+              <a href="#enquire" className="thm-btn banner-one__btn">
                 <span>Discover More</span>
               </a>
             </div>

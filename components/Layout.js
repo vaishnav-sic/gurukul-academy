@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-import AppleTouch from "../assets/images/favicons/apple-touch-icon.png";
-import Fevicon32 from "../assets/images/favicons/favicon-32x32.png";
-import Fevicon16 from "../assets/images/favicons/favicon-16x16.png";
+import AppleTouch from "../assets/images/favicons/SIC_apple_touch_180x180.png";
+import Fevicon32 from "../assets/images/favicons/SIC_Favicon_32x32.png";
+import Fevicon16 from "../assets/images/favicons/SIC_Favicon_16x16.png";
 
 const Layout = (props) => {
   const [scrollTop, setScrollTop] = useState(false);

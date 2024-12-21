@@ -25,10 +25,10 @@ const FunFact = () => {
                   offset={{ top: 10 }}
                   delayedCall
                 >
-                  <CountUp end={counter.startCounter ? 4789 : 0} />
+                  <CountUp end={counter.startCounter ? 2789 : 0} />
                 </VisibilitySensor>
               </h3>
-              <p>Downloads</p>
+              <p>Students</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
@@ -39,10 +39,10 @@ const FunFact = () => {
                   offset={{ top: 10 }}
                   delayedCall
                 >
-                  <CountUp end={counter.startCounter ? 6400 : 0} />
+                  <CountUp end={counter.startCounter ? 2091 : 0} />
                 </VisibilitySensor>
               </h3>
-              <p>Likes</p>
+              <p>Placements</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-6">
@@ -53,7 +53,7 @@ const FunFact = () => {
                   offset={{ top: 10 }}
                   delayedCall
                 >
-                  <CountUp end={counter.startCounter ? 900 : 0} />
+                  <CountUp end={counter.startCounter ? 2525 : 0} />
                 </VisibilitySensor>
               </h3>
               <p>5 Star Rating</p>
@@ -67,10 +67,10 @@ const FunFact = () => {
                   offset={{ top: 10 }}
                   delayedCall
                 >
-                  <CountUp end={counter.startCounter ? 266 : 0} />
+                  <CountUp end={counter.startCounter ? 95 : 0} />
                 </VisibilitySensor>
               </h3>
-              <p>Awards</p>
+              <p>Courses</p>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import Preloader from "../components/Preloader";
 import MobileMenu from "../components/MobileMenu";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
+import ClientTestimonials from "../components/ClientTestimonials";
 import Footer from "../components/Footer";
 import BlogHome from "../components/BlogHome";
 import CTAThree from "../components/CTAThree";
@@ -19,34 +20,22 @@ import FAQ from "../components/FAQ";
 import Clients from "../components/Clients";
 import Testimonials from "../components/Testimonials";
 
-const HomePage = () => (
+const About = () => (
   <div>
     <Preloader />
 
-    <Layout pageTitle="Gurukul Academy">
+    <Layout pageTitle="Gurukul | About">
       <Header
         btnClass="main-nav__btn"
         extraClassName="site-header-one__fixed-top"
       />
       <MobileMenu />
-      <Banner />
-      <Services />
-      {/* <CTAOne /> */}
-      <FunFact />
-      {/* <CTATwo />
-      <Pricing /> */}
-      <Testimonials />
-      <Clients />
-      {/* <Team />
-      <VideoOne />
-      <AppScreen />
+      {/* <Banner /> */}
+      <Team />
       <FAQ />
-      <BlogHome />
-      <Contact /> */}
-      <CTAThree />
       <Footer />
     </Layout>
   </div>
 );
 
-export default HomePage;
+export default About;

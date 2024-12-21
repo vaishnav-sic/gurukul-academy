@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import PreloaderImage from "../assets/images/loader.png";
+import PreloaderImage from "../assets/images/Logo.png";
 
 const Preloader = () => {
   const router = useRouter();

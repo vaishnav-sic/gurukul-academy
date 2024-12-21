@@ -8,7 +8,7 @@ const Services = () => {
         <BlockTitle
           textAlign="center"
           paraText="Feature List"
-          titleText={`Appton Providing You \n Best Features`}
+          titleText={`GURUKUL ACADEMY \n Guaranteed 100% Success`}
         />
         <div className="row">
           <div className="col-lg-3 col-md-6">
@@ -16,10 +16,10 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-computer-graphic"></i>
+                  <i className="apton-icon-development"></i>
                 </div>
-                <h3>Easy to Edit</h3>
-                <p>Lorem ipsum is are many variations of pass majy.</p>
+                <h3>Engineering Courses</h3>
+                {/* <p>Consistent Rise: Daily Updates, Weekly Triumphs</p> */}
               </div>
             </div>
           </div>
@@ -28,10 +28,10 @@ const Services = () => {
               <div className="service-one__inner">
                 <div className="service-one__circle"></div>
                 <div className="service-one__icon">
-                  <i className="apton-icon-development"></i>
+                  <i className="apton-icon-computer-graphic"></i>
                 </div>
-                <h3>Fully Secure</h3>
-                <p>Lorem ipsum is are many variations of pass majy.</p>
+                <h3>Industrial Training</h3>
+                {/* <p>Multiple Real-Time projects and Hands-on Internships</p> */}
               </div>
             </div>
           </div>
@@ -42,8 +42,8 @@ const Services = () => {
                 <div className="service-one__icon">
                   <i className="apton-icon-development1"></i>
                 </div>
-                <h3>Manage User</h3>
-                <p>Lorem ipsum is are many variations of pass majy.</p>
+                <h3>Placements</h3>
+                {/* <p>Endless Mock Interviews with Expert Guidance</p> */}
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ const Services = () => {
                 <div className="service-one__icon">
                   <i className="apton-icon-responsive"></i>
                 </div>
-                <h3>Free Trial</h3>
-                <p>Lorem ipsum is are many variations of pass majy.</p>
+                <h3>Online & Live Sessions</h3>
+                {/* <p>Sharpen Your Problem-Solving Instincts!</p> */}
               </div>
             </div>
           </div>

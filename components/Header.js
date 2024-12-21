@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import NavLinks from "./NavLinks";
 
-import LogoImage from "../assets/images/logo-1-1.png";
+import LogoImage from "../assets/images/Logo.png";
 
 const HeaderHome = (props) => {
   const [sticky, setSticky] = useState(false);
+  const [menuActive, setMenuActive] = useState(true);
 
   const handleScroll = () => {
     if (window.scrollY > 70) {
@@ -30,7 +31,6 @@ const HeaderHome = (props) => {
         e.preventDefault();
       });
 
-    //Close Mobile Menu
     let sideMenuCloser = document.querySelectorAll(
       ".side-menu__close-btn, .side-menu__block-overlay"
     );
@@ -42,19 +42,21 @@ const HeaderHome = (props) => {
       });
     });
   };
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
 
   return (
     <header
       className={`site-header-one stricky  ${props.extraClassName} ${
         sticky === true ? "stricky-fixed stricked-menu" : " "
-      }`}
-    >
+      }`}>
       <div className="container-fluid">
         <div className="site-header-one__logo">
           <a href="/">
-            <img src={LogoImage} width="129" alt="" />
+            <img src={LogoImage} width="101" alt="" />
           </a>
-          <span className="side-menu__toggler">
+          <span className="side-menu__toggler" onClick={toggleMenu}>
             <i className="fa fa-bars"></i>
           </span>
         </div>
@@ -62,8 +64,12 @@ const HeaderHome = (props) => {
           <NavLinks />
         </div>
         <div className="main-nav__right">
-          <a href="#" className={`thm-btn ${props.btnClass}`}>
-            <span>Download App</span>
+          <a
+            href="https://forms.gle/jdGAdxAptHBcof4s6"
+            className={`thm-btn ${props.btnClass}`}
+            target="_blank"
+            rel="noopener noreferrer">
+            <span>Get In Touch</span>
           </a>
         </div>
       </div>

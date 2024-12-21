@@ -11,7 +11,7 @@ import BlogSidebar from "../components/BlogSidebar";
 import BlogSingle from "../components/BlogSingle";
 
 const BlogPostPage = () => (
-  <Layout pageTitle="Gurukul | Blog Post Page">
+  <Layout pageTitle="SIC | Blog Post Page">
     <Preloader />
     <Header btnClass="main-nav__btn-two" />
     <MobileMenu />

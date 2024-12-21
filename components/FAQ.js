@@ -12,7 +12,7 @@ const FAQ = (props) => {
         <BlockTitle
           textAlign="center"
           paraText="Frequently Asked Questions"
-          titleText={`Want to Ask Something \n From Appton?`}
+          titleText={`Want to Ask Something \n For Us?`}
         />
         <div className="accrodion-grp faq-accrodion">
           <AccordionItem

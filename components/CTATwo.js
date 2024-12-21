@@ -15,7 +15,7 @@ const CTATwo = () => {
               <BlockTitle
                 textAlign="left"
                 paraText="Feature List"
-                titleText={`Appton Providing You \n Best Features`}
+                titleText={`Gurukul Providing You \n Best Features`}
               />
               <div className="cta-two__icon-wrap">
                 <div className="cta-two__icon-single">
