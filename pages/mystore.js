@@ -6,6 +6,9 @@ import Banner from "../components/Banner";
 import ClientTestimonials from "../components/ClientTestimonials";
 import Footer from "../components/Footer";
 import BlogHome from "../components/BlogHome";
+import Courses from "../components/Courses";
+import Courses2 from "../components/Courses2";
+import Courses3 from "../components/Courses3";
 import CTAThree from "../components/CTAThree";
 import Contact from "../components/Contact";
 import Services from "../components/Services";
@@ -31,8 +34,9 @@ const MyStore = () => (
       />
       <MobileMenu />
       {/* <Banner /> */}
-      <BlogHome />
-      <BlogHome />
+      <Courses />
+      <Courses2 />
+      <Courses3 />
       <Footer />
     </Layout>
   </div>

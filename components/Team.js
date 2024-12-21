@@ -17,7 +17,7 @@ const Team = () => {
         <BlockTitle
           textAlign="center"
           paraText="Expert People"
-          titleText={`Meet Our Professional \n Team Members`}
+          titleText={`Meet Our Professional \n & Experienced Staff`}
         />
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-12">
