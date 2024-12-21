@@ -1,2 +1,2 @@
-# gurukul-academy
-Gurukul Academy
+# gurukulacademy-next
+a next js template
