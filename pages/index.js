@@ -18,6 +18,7 @@ import AppScreen from "../components/AppScreen";
 import FAQ from "../components/FAQ";
 import Clients from "../components/Clients";
 import Testimonials from "../components/Testimonials";
+import BannerOne from "../components/BannerOne";
 
 const HomePage = () => (
   <div>
@@ -30,6 +31,7 @@ const HomePage = () => (
       />
       <MobileMenu />
       <Banner />
+      <BannerOne />
       <Services />
       {/* <CTAOne /> */}
       <FunFact />
